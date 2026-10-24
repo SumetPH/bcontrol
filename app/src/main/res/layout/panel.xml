@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.Notification.Title" />
+
+    <ProgressBar
+        android:id="@+id/level"
+        style="@android:style/Widget.Material.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="4dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button android:id="@+id/minus" style="@style/PanelButton" android:text="−" />
+        <Button android:id="@+id/preset0" style="@style/PanelButton" />
+        <Button android:id="@+id/preset1" style="@style/PanelButton" />
+        <Button android:id="@+id/preset2" style="@style/PanelButton" />
+        <Button android:id="@+id/preset3" style="@style/PanelButton" />
+        <Button android:id="@+id/plus" style="@style/PanelButton" android:text="+" />
+    </LinearLayout>
+</LinearLayout>
